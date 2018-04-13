@@ -24,8 +24,8 @@ Allows for placing the objects directly from working datasets (including, data f
 The vector of "share" values should be comprised of integers corresponding to total share of individual firms/actors (e.g., df$s <- c(35, 40, 5, 10, 6, 4) # 6 firms totaling 100 percent of the market). The measure is often used as a measure of competition, where 0 is perfect competitiveness and 10,000 is a perfect monopoly.
 }
 \examples{
-a <- c(1,2,3) # arbitrary firm id
-b <- c(2,3,4) # market share of each firm
+a <- c(1,2,3,4) # arbitrary firm id
+b <- c(20,30,40,10) # market share of each firm (should total 100\% of market share)
 x <- data.frame(a,b) # create data frame
 hhi(x, "b") # calculate market concentration based on firms' share sizes
 }

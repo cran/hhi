@@ -48,7 +48,7 @@ plot_hhi(data, "year", "hhi")
 
 ## How do I get `hhi `?
 
-Though the full package will soon be released on CRAN, you can access the pre-released version (1.0.0) at my `hhi` repository on [GitHub](https://github.com/pdwaggoner/hhi). Check back for updates and the full release at CRAN soon. If you have any questions or find any bugs requiring fixing, please feel free to contact me (see the DESCRIPTION file for more).
+The package is released on CRAN. If you have any questions or find any bugs requiring fixing, please feel free to contact me (see the `DESCRIPTION` file for more).
 
 ## References
 1. Herfindahl, Orris C. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
