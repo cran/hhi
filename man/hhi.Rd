@@ -35,4 +35,6 @@ Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berk
 Herfindahl, Orris Clemens. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 
 Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
+
+Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software 3(28), 828.
 }

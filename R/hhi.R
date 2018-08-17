@@ -10,6 +10,7 @@
 #'@references Hirschman, Albert O. 1945. "National power and structure of foreign trade." Berkeley, CA: University of California Press.
 #'@references Herfindahl, Orris Clemens. 1950. "Concentration in the steel industry." Ph.D. dissertation, Columbia University.
 #'@references Rhoades, Stephen A. 1993. "The herfindahl-hirschman index." Federal Reserve Bulletin 79: 188.
+#'@references Waggoner, Philip D. 2018. "The hhi Package: Streamlined Calculation and Visualization of Herfindahl-Hirschman Index Scores." Journal of Open Source Software 3(28), 828.
 #'@examples
 #' a <- c(1,2,3,4) # arbitrary firm id
 #' b <- c(20,30,40,10) # market share of each firm (should total 100% of market share)
@@ -28,12 +29,10 @@ hhi <- function(x, s){
     stop('"s" must be numeric vector\n',
          'You have provided an object of class: ', class(d)[1])
   }
-  for(i in 1:length(d)) {
-    if(d[i] < 0){
-      stop('vector "s" must contain only positive values')
-    }
-    d[i] <- d[i]^2
-    hhi <- sum(d)
+  if (any(d < 0)) {
+    stop('vector "s" must contain only positive values')
   }
+  hhi <- sum(d^2)
+
   return(hhi)
 }
